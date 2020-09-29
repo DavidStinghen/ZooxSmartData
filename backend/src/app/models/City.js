@@ -1,6 +1,4 @@
 import mongoose from 'mongoose';
-import pkg from 'date-fns';
-const { format } = pkg;
 
 const CitySchema = new mongoose.Schema(
   {
