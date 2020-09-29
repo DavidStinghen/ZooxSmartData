@@ -17,30 +17,33 @@ Para o desenvolvimendo do frontend além do framework Vue.js foi utilizado o Vue
 Será necessário para a instalação do backend que seja utilizado um container Docker para uma imagem do MongoDB ou realizar acesso remoto via MongoDB Atlas pelo link: https://www.mongodb.com/cloud/atlas.
 
 Caso escolha utilizar o Docker, após a instalação e incialização do mesmo execute o comando abaixo:
-`
-docker run -d --name zoox_database -p 27017:27017  mongo:latest
+```
+$ docker run -d --name zoox_database -p 27017:27017  mongo:latest
 
-docker start zoox_database
-`
+$ docker start zoox_database
+```
+
 Após a instalação e inicialização do container crie um arquivo .env igual ao arquivo .env-example e informe na constante DB_URL a string de conexão com o banco de dados MongoDB que deve se parecer com isso: 
-`
+```
 DB_URL="mongodb://localhost/zoox"
-`
+```
+
 E então realize a instalação dos pacotes e execute o servidor:
-`
-cd backend
+```
+$ cd backend
 
-npm install
+$ npm install
 
-npm start
-`
+$ npm start
+```
+
 ### Frontend
 
 Para a execução do frontend basta apenas seguir os passos abaixo:
-`
-cd frontend
+```
+$ cd frontend
 
-npm install
+$ npm install
 
-npm run serve
-`
+$ npm run serve
+```
