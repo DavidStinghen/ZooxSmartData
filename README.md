@@ -49,7 +49,7 @@ $ npm install
 $ npm start
 ```
 
-Para verificar o funcionamento dos endpoints da api basta importar para o arquivo Insomnia.json localizado na raiz da pasta backend para o seu software de teste de api favorito.
+Para verificar o funcionamento dos endpoints da api basta importar o arquivo Insomnia.json localizado na raiz da pasta backend para o seu software de teste de api favorito.
 
 ### Frontend
 
