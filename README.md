@@ -1,6 +1,6 @@
 # ZooxSmartData
 
-ZooxSmartData é uma aplicação criada para realização de cadastros, alterações, exclusões e visualizações de cidades e estados. Para o desenvolvimento da aplicação foi criada uma API REST em Node.js para realizar as ações cidatas acima, como também, um app WEB  criado em Vue.js.
+ZooxSmartData é uma aplicação criada para realização de cadastros, alterações, exclusões e visualizações de cidades e estados. Para o desenvolvimento da aplicação foi criada uma API REST em Node.js para realizar as ações citadas acima. Para o frontend foi cruiado um app em Vue.js.
 
 ## Backend
 
@@ -12,35 +12,55 @@ Para o desenvolvimendo do frontend além do framework Vue.js foi utilizado o Vue
 
 ## Instalação
 
+Antes de executar a instalação do backend e frontend da aplicação realize os passos abaixo:
+```
+$ git clone https://github.com/DavidStinghen/ZooxSmartData.git
+
+$ cd ZooxSmartData
+```
+
 ### Backend
+
+É definido que aplicação irá ser executada em:
+```
+http://localhost:3333
+```
 
 Será necessário para a instalação do backend que seja utilizado um container Docker para uma imagem do MongoDB ou realizar acesso remoto via MongoDB Atlas pelo link: https://www.mongodb.com/cloud/atlas.
 
 Caso escolha utilizar o Docker, após a instalação e incialização do mesmo execute o comando abaixo:
-`
-docker run -d --name zoox_database -p 27017:27017  mongo:latest
+```
+$ docker run -d --name zoox_database -p 27017:27017  mongo:latest
 
-docker start zoox_database
-`
-Após a instalação e inicialização do container crie um arquivo .env igual ao arquivo .env-example e informe na constante DB_URL a string de conexão com o banco de dados MongoDB que deve se parecer com isso: 
-`
+$ docker start zoox_database
+```
+
+Após a instalação e inicialização do container crie um arquivo .env na raiz da pasta backend igual ao arquivo .env-example e informe na constante DB_URL a string de conexão com o banco de dados MongoDB que deve se parecer com isso: 
+```
 DB_URL="mongodb://localhost/zoox"
-`
+```
+
 E então realize a instalação dos pacotes e execute o servidor:
-`
-cd backend
+```
+$ cd backend
 
-npm install
+$ npm install
 
-npm start
-`
+$ npm start
+```
+
 ### Frontend
 
 Para a execução do frontend basta apenas seguir os passos abaixo:
-`
-cd frontend
+```
+$ cd frontend
 
-npm install
+$ npm install
 
-npm run serve
-`
+$ npm run serve
+```
+
+A baseURL para conexão com API foi definida para ser:
+```
+http://localhost:3333
+```
