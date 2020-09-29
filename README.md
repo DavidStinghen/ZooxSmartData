@@ -23,7 +23,7 @@ $ docker run -d --name zoox_database -p 27017:27017  mongo:latest
 $ docker start zoox_database
 ```
 
-Após a instalação e inicialização do container crie um arquivo .env igual ao arquivo .env-example e informe na constante DB_URL a string de conexão com o banco de dados MongoDB que deve se parecer com isso: 
+Após a instalação e inicialização do container crie um arquivo .env na raiz da pasta backend igual ao arquivo .env-example e informe na constante DB_URL a string de conexão com o banco de dados MongoDB que deve se parecer com isso: 
 ```
 DB_URL="mongodb://localhost/zoox"
 ```
