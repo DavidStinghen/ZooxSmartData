@@ -12,6 +12,13 @@ Para o desenvolvimendo do frontend além do framework Vue.js foi utilizado o Vue
 
 ## Instalação
 
+Antes de executar a instalação do backend e frontend da aplicação realize os passos abaixo:
+```
+$ git clone https://github.com/DavidStinghen/ZooxSmartData.git
+
+$ cd ZooxSmartData
+```
+
 ### Backend
 
 É definido que aplicação irá ser executada em:
