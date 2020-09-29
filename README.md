@@ -1,6 +1,6 @@
 # ZooxSmartData
 
-ZooxSmartData é uma aplicação criada para realização de cadastros, alterações, exclusões e visualizações de cidades e estados. Para o desenvolvimento da aplicação foi criada uma API REST em Node.js para realizar as ações cidatas acima, como também, um app WEB  criado em Vue.js.
+ZooxSmartData é uma aplicação criada para realização de cadastros, alterações, exclusões e visualizações de cidades e estados. Para o desenvolvimento da aplicação foi criada uma API REST em Node.js para realizar as ações citadas acima. Para o frontend foi cruiado um app em Vue.js.
 
 ## Backend
 
