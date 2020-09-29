@@ -14,6 +14,11 @@ Para o desenvolvimendo do frontend além do framework Vue.js foi utilizado o Vue
 
 ### Backend
 
+É definido que aplicação irá ser executada em:
+```
+http://localhost:3333
+```
+
 Será necessário para a instalação do backend que seja utilizado um container Docker para uma imagem do MongoDB ou realizar acesso remoto via MongoDB Atlas pelo link: https://www.mongodb.com/cloud/atlas.
 
 Caso escolha utilizar o Docker, após a instalação e incialização do mesmo execute o comando abaixo:
@@ -46,4 +51,9 @@ $ cd frontend
 $ npm install
 
 $ npm run serve
+```
+
+A baseURL para conexão com API foi definida para ser:
+```
+http://localhost:3333
 ```
